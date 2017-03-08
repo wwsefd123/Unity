@@ -7,12 +7,13 @@ using UnityEngine;
 using System;
 using System.Threading;
 
-public class SocketManager : MonoBehaviour {
+public class Client : MonoBehaviour {
 
 
     private Socket m_Socket;
 
-    public string iPAdress = "192.168.2.200";
+    //public string iPAdress = "192.168.2.200";
+    public string iPAdress = "127.0.0.1";
     public const int kPort = 6777;
 
     private int SenddataLength;                     // Send Data Length. (byte)
@@ -51,7 +52,7 @@ public class SocketManager : MonoBehaviour {
         if (Input.GetMouseButton(0))
         {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
-            String vectorData = mousePos.x.ToString() +","+ mousePos.y.ToString() +",";
+            String vectorData = (mousePos.x/13f).ToString() +","+ (-mousePos.y/10f).ToString() +"E";
             print(vectorData);
             SendLocation(vectorData);
         }

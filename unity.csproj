@@ -75,9 +75,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GifDecoder\BitHelper.cs" />
+    <Compile Include="Assets\GifDecoder\GifAnimatorScript.cs" />
+    <Compile Include="Assets\GifDecoder\GifColor.cs" />
+    <Compile Include="Assets\GifDecoder\GifData.cs" />
+    <Compile Include="Assets\GifDecoder\GifGraphicsControlExtension.cs" />
+    <Compile Include="Assets\GifDecoder\GifImageData.cs" />
+    <Compile Include="Assets\GifDecoder\GifImageDescriptor.cs" />
+    <Compile Include="Assets\GifDecoder\GifParserScript.cs" />
+    <Compile Include="Assets\Script\Client.cs" />
+    <Compile Include="Assets\Script\ClientScript.cs" />
     <Compile Include="Assets\Script\Menu.cs" />
     <Compile Include="Assets\Script\Server.cs" />
-    <Compile Include="Assets\Script\SocketManager.cs" />
     <Compile Include="Assets\Script\particleScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
