@@ -83,11 +83,19 @@
     <Compile Include="Assets\GifDecoder\GifImageData.cs" />
     <Compile Include="Assets\GifDecoder\GifImageDescriptor.cs" />
     <Compile Include="Assets\GifDecoder\GifParserScript.cs" />
+    <Compile Include="Assets\PauseController\Scripts\AppQuit.cs" />
+    <Compile Include="Assets\PauseController\Scripts\IPausable.cs" />
+    <Compile Include="Assets\PauseController\Scripts\IQuittable.cs" />
+    <Compile Include="Assets\PauseController\Scripts\PauseManager.cs" />
+    <Compile Include="Assets\PauseController\Scripts\TimePause.cs" />
     <Compile Include="Assets\Script\Client.cs" />
-    <Compile Include="Assets\Script\ClientScript.cs" />
+    <Compile Include="Assets\Script\Console.cs" />
     <Compile Include="Assets\Script\Menu.cs" />
     <Compile Include="Assets\Script\Server.cs" />
     <Compile Include="Assets\Script\particleScript.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\PauseController\readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
